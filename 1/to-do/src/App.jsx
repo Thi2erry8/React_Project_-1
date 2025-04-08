@@ -5,10 +5,18 @@ function App() {
    const [todos,setTodos] = useState([    
                             'Go to the gym',
                             'Eat more',
-                            'Pick up the kids from school']);
+                            'Pick up the kids from school'
+                          ]);
+  
+     function handleAddTodos(newTodo){
+       const NewsTodoList = [...todos,newTodo] ;
+       setTodos[NewsTodoList]
+     }
+ 
+
   return (
     <>
-       <TodoInput />
+       <TodoInput handleAddTodos={handleAddTodos} />
        <TodoList todos={todos}/>
     </>
   )
