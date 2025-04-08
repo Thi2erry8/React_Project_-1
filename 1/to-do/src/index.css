@@ -20,6 +20,7 @@ button {
   flex-direction: column;
   padding: 14px;
   background: #eff6ff;
+  align-items: center;
   gap: 14px;
 }
 
