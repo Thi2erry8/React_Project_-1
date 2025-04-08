@@ -1,17 +1,16 @@
-function TodoList(){
-        let todos = [
-         'Go to the gym',
-         'Eat more',
-         'Pick up the kids from school'
-         ] ;  
+import TodoCard from "./TodoCard";
+function TodoList(props){
+    const {todos} = props ;
     
     return(
  
        
-       <ul>
+       <ul className="main">
               {todos.map((todo,todoIndex)  =>{
                  return(
-                    <li key={todoIndex}>{todo}</li>
+                    <TodoCard key={todoIndex}>
+                         <p>{todo}</p>
+                    </TodoCard>
                  )
               })}
         </ul>
