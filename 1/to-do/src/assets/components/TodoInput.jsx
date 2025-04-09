@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 function TodoInput(props){
-   const {handleAddTodos} =  props;
-   const [todoValue,setTodoValue] = useState('') ;
+   const {handleAddTodos,todoValue,setTodoValue} =  props;
+   
 
    return(
     <header>
