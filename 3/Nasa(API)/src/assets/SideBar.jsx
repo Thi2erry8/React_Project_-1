@@ -1,11 +1,16 @@
-function SideBar(){
+function SideBar(props){
+      const{handleToogleModal} = props ;
     return(
-         <div>
-               <h2>The Brutal Martian Landscape</h2>
-               <div>
+         <div onClick={handleToogleModal} className="sidebar">
+               <div className="bgOverlay"></div>
+              <div className="sidebarContents">
+               <h2>The Brutal Martian Landscape</h2>                
+                   <div>
                      <p>description</p>
-                     
-               </div>
+                     <p>bkfbvjzdfkbvfbvjvhdfkbvdkvgsdljvhbm v</p>
+               
+                   </div>   
+             </div>     
          </div>
     )
 }
