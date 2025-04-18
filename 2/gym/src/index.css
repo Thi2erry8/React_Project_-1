@@ -4,9 +4,6 @@
 html {
   scroll-behavior: smooth;
 }
-#root{
-  padding: 0px;
-}
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
