@@ -1,7 +1,9 @@
+import SectionWrapper from "./SectionWrapper"
 function Generator(){
      return(
-        <SectionWrapper>
-            
+        <SectionWrapper header={"generate your workout"} 
+        title={["It's","Huge","o'clock"]}>
+            Life
         </SectionWrapper>
      )
 }
